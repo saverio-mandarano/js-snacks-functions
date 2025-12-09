@@ -14,16 +14,20 @@ function timeRelatedGreetingTo (userName){
     const currentHours = currentDate.getHours();
     const currentMinutes = currentDate.getMinutes();
     const currentSeconds = currentDate.getSeconds();
-    console.log(`Current Time: ${currentHours}:${currentMinutes}:${currentSeconds}`);
+    const currentTime = `Current Time: ${currentHours}:${currentMinutes}:${currentSeconds}`;
 
-
+    let greeting;
     if (currentHours >= 4 && currentHours < 13) {
-        console.log(`Buongiorno ${userName}`);
+        greeting = `Buongiorno ${userName}`;
     } else if (currentHours >= 13 && currentHours < 17) {
-        console.log(`Buon pomeriggio ${userName}`);
+        greeting = `Buon pomeriggio ${userName}`;
     } else {
-     console.log(`Buonasera ${userName}`);
+     greeting =`Buonasera ${userName}`;
     }
+
+    return {
+        time: currentTime, greeting: greeting
+    };
 }
 
 
