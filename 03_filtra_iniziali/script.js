@@ -6,9 +6,10 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 // Dichiara la funzione qui.
 function getWordsStartingWith (array, letter) {
     let  wordsStartingWith = [];
+    let lowerCaseLetter = letter.toLowerCase();
     
     for (let i=0; i<array.length; i++){
-        if ( array[i][0] === letter){
+        if ( array[i][0].toLowerCase() === lowerCaseLetter){
             wordsStartingWith.push(array[i]);
         }
     }
