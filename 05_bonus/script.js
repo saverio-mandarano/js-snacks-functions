@@ -10,10 +10,22 @@ const name = 'Mario';
 // Dichiara la funzione qui.
 function timeRelatedGreetingTo (userName){
 
+    const currentDate = new Date();
+    const currentHours = currentDate.getHours();
+
+    if (currentHours >= 4 && currentHours < 13) {
+        console.log(`Buongiorno ${userName}`);
+    } else if (currentHours >= 13 && currentHours < 17) {
+        console.log(`Buon pomeriggio ${userName}`);
+    } else {
+     console.log(`Buonasera ${userName}`);
+    }
 }
 
 
 // Invoca la funzione qui e stampa il risultato in console
+
+console.log(`Current Time: ${currentHours}:${currentMinutes}:${currentSeconds}`);
 
 
 
