@@ -5,7 +5,7 @@ const word = 'javascript';
 
 // Dichiara la funzione qui.
 function getNumberOfVowels (string){
-    let numberOfVowels = 0;
+    let stringVowels = [];
     const vowels = [
         `a`,
         `e`,
@@ -17,16 +17,16 @@ function getNumberOfVowels (string){
     for (let i=0; i<string.length; i++){
         for (let j=0; j<vowels.length; j++){
             if ( string[i].toLowerCase() === vowels[j] ){
-                numberOfVowels ++;
+                stringVowels.push(string[i]);
             }
         }
     }
 
-    return numberOfVowels;
+    return `${stringVowels.length} ${stringVowels}`;
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-
+console.log(getNumberOfVowels(word));
 
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
