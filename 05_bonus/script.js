@@ -14,7 +14,7 @@ function timeRelatedGreetingTo (word){
     const currentHours = currentDate.getHours();
     const currentMinutes = currentDate.getMinutes();
     const currentSeconds = currentDate.getSeconds();
-    const currentTime = `${currentHours}:${currentMinutes}:${currentSeconds}`;
+    console.log(`currentTime: ${currentHours}:${currentMinutes}:${currentSeconds}`);
 
     let timeRelatedGreeting;
     if (currentHours >= 4 && currentHours < 13) {
