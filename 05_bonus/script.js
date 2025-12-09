@@ -14,7 +14,7 @@ function timeRelatedGreetingTo (word){
     const currentHours = currentDate.getHours();
     const currentMinutes = currentDate.getMinutes();
     const currentSeconds = currentDate.getSeconds();
-    const currentTime = `Current Time: ${currentHours}:${currentMinutes}:${currentSeconds}`;
+    const currentTime = `${currentHours}:${currentMinutes}:${currentSeconds}`;
 
     let greeting;
     if (currentHours >= 4 && currentHours < 13) {
@@ -22,11 +22,11 @@ function timeRelatedGreetingTo (word){
     } else if (currentHours >= 13 && currentHours < 17) {
         greeting = `Buon pomeriggio ${word}`;
     } else {
-     greeting =`Buonasera ${word}`;
+        greeting =`Buonasera ${word}`;
     }
 
     return {
-        time: currentTime, greeting: greeting
+        currentTime: currentTime, timeRelatedGreeting: greeting
     };
 }
 
