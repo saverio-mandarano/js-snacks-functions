@@ -4,7 +4,7 @@ buongiorno se è mattina (fino alle 13),
 buon pomeriggio se è pomeriggio (fino alle 17) 
 e buonasera se è sera (oltre le 17)
 */
-const name = 'Mario';
+const name = 'Saverio';
 
 
 // Dichiara la funzione qui.
@@ -12,6 +12,10 @@ function timeRelatedGreetingTo (userName){
 
     const currentDate = new Date();
     const currentHours = currentDate.getHours();
+    const currentMinutes = currentDate.getMinutes();
+    const currentSeconds = currentDate.getSeconds();
+    console.log(`Current Time: ${currentHours}:${currentMinutes}:${currentSeconds}`);
+
 
     if (currentHours >= 4 && currentHours < 13) {
         console.log(`Buongiorno ${userName}`);
@@ -24,9 +28,7 @@ function timeRelatedGreetingTo (userName){
 
 
 // Invoca la funzione qui e stampa il risultato in console
-
-console.log(`Current Time: ${currentHours}:${currentMinutes}:${currentSeconds}`);
-
+console.log(timeRelatedGreetingTo(name));
 
 
-//Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
+//Risultato atteso se si passa 'Saverio' alle 18: // Buonasera Saverio.
