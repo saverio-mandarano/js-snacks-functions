@@ -4,7 +4,6 @@ buongiorno se è mattina (fino alle 13),
 buon pomeriggio se è pomeriggio (fino alle 17) 
 e buonasera se è sera (oltre le 17)
 */
-
 const name = 'Mario';
 
 
