@@ -25,14 +25,12 @@ function timeRelatedGreetingTo (word){
         timeRelatedGreeting =`Buonasera ${word}`;
     }
 
-    return {
-        currentTime: currentTime, timeRelatedGreeting: timeRelatedGreeting
-    };
+    return timeRelatedGreeting;
 }
 
 
 // Invoca la funzione qui e stampa il risultato in console
-console.log(timeRelatedGreetingTo(name));
+console.log(timeRelatedGreetingTo(userName));
 
 
 //Risultato atteso se si passa 'Saverio' alle 18: // Buonasera Saverio.
