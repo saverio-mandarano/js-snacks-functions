@@ -22,7 +22,7 @@ function getNumberOfVowels (string){
         }
     }
 
-    return `${stringVowels.length} ${stringVowels}`;
+    return `${stringVowels.length} (${stringVowels})`;
 }
 
 // Invoca la funzione qui e stampa il risultato in console
