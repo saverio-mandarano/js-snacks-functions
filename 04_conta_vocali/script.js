@@ -1,6 +1,6 @@
 /* Scrivi una funzione che accetti una stringa
  e restituisca il numero di vocali contenute al suo interno */
-const word = 'javascript';
+const word = 'jAvascript'; //modifico la prima vocale (in  Maiuscolo) per verificare case sensitive. OK
 
 
 // Dichiara la funzione qui.
